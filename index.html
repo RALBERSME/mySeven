@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/europe.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Seven Sages</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+      }
+      h1 {
+        font-family: "Exo 2, sans-serif";
+        text-transform: uppercase;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(254, 240, 138);
+        margin-bottom: 2.25rem;
+
+        font-size: 2.25rem;
+
+        line-height: 1;
+      }
+      p {
+        font-family: "Lato", sans-serif;
+        color: rgb(156, 163, 175);
+        margin-bottom: 2rem;
+      }
+      .bg-black {
+        background-color: rgb(0, 0, 0);
+      }
+      #popUpEl {
+        position: fixed;
+
+        border-radius: 0.5rem;
+
+        padding-left: 1rem;
+
+        padding-right: 1rem;
+
+        padding-top: 0.5rem;
+
+        padding-bottom: 0.5rem;
+      }
+      #country {
+        font-size: 0.75rem;
+
+        line-height: 1rem;
+
+        color: rgb(254, 240, 138);
+      }
+      #city {
+        font-size: 1.125rem;
+
+        line-height: 1.75rem;
+
+        font-weight: 700;
+
+        color: rgb(254, 240, 138);
+      }
+      strong {
+        color: rgb(251, 251, 208);
+      }
+      .h-screen {
+        height: 100vh;
+      }
+      .flex-details {
+        display: flex;
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        padding-left: 2rem;
+
+        padding-right: 2rem;
+      }
+      #max-width {
+        max-width: 500px;
+      }
+      .pb {
+        padding-bottom: 3rem;
+      }
+      a {
+        display: inline-block;
+        text-decoration: none;
+
+        border-radius: 9999px;
+
+        background-color: rgb(251, 251, 208);
+        padding-left: 2rem;
+
+        padding-right: 2rem;
+
+        padding-top: 1rem;
+
+        padding-bottom: 1rem;
+
+        color: rgb(0, 0, 0);
+      }
+      a:hover {
+        background-color: rgb(202, 138, 4);
+      }
+      @media (min-width: 1200px) {
+        .xl-w {
+          width: 50%;
+        }
+        .xl-f {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="popUpEl" class="bg-black">
+      <h2 id="country">Greece</h2>
+      <p id="city">Athens</p>
+    </div>
+    <div class="xl-f h-screen">
+      <div class="h-screen xl-w" id="canvasContainer">
+        <canvas></canvas>
+      </div>
+      <div class="xl-w flex-details bg-black">
+        <div id="max-width">
+          <h1>
+            Das wertvolle Wissen der Sieben Weisen <br />The valuable knowledge
+            of the Seven Sages
+          </h1>
+          <p>
+            Im Grunde ist es nur ein Kontinent. Aber oftmals bekommt man den
+            Eindruck, als sei man hier auf einem fremden Stern. Wandeln wir den
+            Kontinent somit einfach in einen eigenen Planeten um, der zunehmend
+            unwichtiger wird. Und doch beheimatet er alte Schätze, die es wert
+            sind, genauer hinzuschauen.<br /><em>
+              <strong
+                >Such mit der Mause auf der Weltkarte nach dem alten Wissen. Der
+                Mauszeiger gibt dir einen Hinweis.</strong
+              ></em
+            ><br /><br />
+            Essentially, it's just a continent. But often, you get the
+            impression that you're on a foreign planet. So let's simply
+            transform the continent into its own planet, one that's becoming
+            increasingly unimportant. Yet it's home to ancient treasures that
+            are worth it.<br /><em
+              ><strong
+                >Use your mouse to search for ancient knowledge on the world
+                map. The mouse pointer will give you a hint.</strong
+              ></em
+            >
+          </p>
+          <div class="pb">
+            <a href="https://ralbersme.github.io/mySages/"
+              >Click here to start</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
